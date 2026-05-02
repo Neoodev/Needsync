@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base resets ─────────────────────────────────────────────── */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-dm antialiased overflow-x-hidden;
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-navy-900;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-navy-600 rounded-full;
+  }
+}
+
+/* ─── Utility classes ─────────────────────────────────────────── */
+@layer utilities {
+  /* Gradient text */
+  .grad-text {
+    background: linear-gradient(100deg, #5b8dff, #a064ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Gradient background (buttons, avatars, etc.) */
+  .grad-bg {
+    background: linear-gradient(135deg, #3b6ef8, #7b3ff2);
+  }
+
+  /* Noise overlay (applied via ::after on a wrapper) */
+  .noise-overlay::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+    opacity: 0.02;
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  /* Grid dot background (hero) */
+  .grid-pattern {
+    background-image: linear-gradient(
+        rgba(59, 110, 248, 1) 1px,
+        transparent 1px
+      ),
+      linear-gradient(90deg, rgba(59, 110, 248, 1) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  /* Hide scrollbar */
+  .scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ─── Component classes ───────────────────────────────────────── */
+@layer components {
+  /* Section wrapper */
+  .section-inner {
+    @apply max-w-6xl mx-auto px-5 py-24;
+  }
+
+  /* Card base */
+  .card {
+    @apply dark:bg-navy-card bg-white border dark:border-white/5 border-navy-900/5 rounded-2xl;
+  }
+
+  /* Input / textarea / select shared style */
+  .form-field {
+    @apply w-full dark:bg-navy-700 bg-gray-50
+           border dark:border-white/5 border-navy-900/10
+           rounded-xl px-4 py-3 text-sm
+           dark:text-white text-navy-900
+           outline-none
+           focus:border-blue-DEFAULT/60
+           transition-colors duration-200
+           dark:placeholder:text-white/20 placeholder:text-navy-900/30;
+  }
+
+  /* Native select option colours (can't be done with Tailwind alone) */
+  select option {
+    @apply dark:bg-navy-card bg-white dark:text-white text-navy-900;
+  }
+}
