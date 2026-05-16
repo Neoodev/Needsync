@@ -32,9 +32,9 @@ function App() {
         <Process />
         <Projects />
         <About />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <WhyUs />
-        <FAQ />
+        {/* <FAQ /> */}
         <Contact />
         <Footer />
       </div>

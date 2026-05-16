@@ -65,20 +65,20 @@ function About() {
         <RevealBlock>
           <SectionTag>About Us</SectionTag>
         </RevealBlock>
-        <div className="grid md:grid-cols-1 gap-16 items-center">
+        <div className="grid md:grid-cols-1 gap-16">
           <div>
             <RevealBlock delay={0.1}>
               <SectionTitle>
                 Technology That <span className="grad-text">Synqs for You</span>
               </SectionTitle>
-              <p className="dark:text-white/50 text-navy-900/55 text-sm leading-relaxed mb-4 text-center">
+              <p className="dark:text-white/50 text-navy-900/55 text-sm leading-relaxed mb-4">
                 NeedSynq is a modern technology solutions company focused on
                 delivering digital services tailored to client needs. The
                 company specializes in creating efficient, innovative, and
                 user-centered solutions for businesses, organizations, and
                 individuals.
               </p>
-              <p className="dark:text-white/50 text-navy-900/55 text-sm leading-relaxed mb-6 text-center">
+              <p className="dark:text-white/50 text-navy-900/55 text-sm leading-relaxed mb-6">
                 The name NeedSynq represents the synchronization of client needs
                 with smart technology solutions — ensuring every project is
                 aligned with quality, functionality, and innovation.
@@ -112,60 +112,60 @@ function About() {
                     </div>
                     {mv.label === "Our Mission" ? (
                       <React.Fragment>
-                        <li className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
+                        <p className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
                           To provide high-quality and client-focused technology
                           services.
-                        </li>
-                        <li className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
+                        </p>
+                        <p className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
                           To transform ideas into functional and impactful
                           digital solutions.
-                        </li>
-                        <li className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
+                        </p>
+                        <p className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
                           To build long-term partnerships through innovation,
                           trust, and efficiency.
-                        </li>
-                        <li className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
+                        </p>
+                        <p className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
                           To continuously adapt to modern technologies and
                           industry trends.
-                        </li>
+                        </p>
                       </React.Fragment>
                     ) : mv.label === "Our Core Values" ? (
                       <React.Fragment>
-                        <b className="text-md dark:text-white/55 text-navy-900/60 leading-relaxed">
+                        <b className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
                           Innovation
                         </b>
-                        <li className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
+                        <p className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
                           Creating modern and effective solutions for evolving
                           needs.
-                        </li>
-                        <b className="text-md dark:text-white/55 text-navy-900/60 leading-relaxed">
+                        </p>
+                        <b className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
                           Reliability
                         </b>
-                        <li className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
+                        <p className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
                           Delivering dependable services with consistent
                           quality.
-                        </li>
-                        <b className="text-md dark:text-white/55 text-navy-900/60 leading-relaxed">
+                        </p>
+                        <b className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
                           Collaboration
                         </b>
-                        <li className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
+                        <p className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
                           Working closely with clients and team members for
                           successful outcomes.
-                        </li>
-                        <b className="text-md dark:text-white/55 text-navy-900/60 leading-relaxed">
+                        </p>
+                        <b className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
                           Efficiency
                         </b>
-                        <li className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
+                        <p className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
                           Optimizing workflows and systems for better
                           productivity.
-                        </li>
-                        <b className="text-md dark:text-white/55 text-navy-900/60 leading-relaxed">
+                        </p>
+                        <b className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
                           Integrity
                         </b>
-                        <li className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
+                        <p className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
                           Maintaining professionalism, honesty, and
                           accountability.
-                        </li>
+                        </p>
                       </React.Fragment>
                     ) : (
                       <p className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
