@@ -62,8 +62,19 @@ function Projects() {
           <SectionTitle>
             Work That <span className="grad-text">Delivers Results</span>
           </SectionTitle>
-          <p className="dark:text-white/45 text-navy-900/50 text-base max-w-lg leading-relaxed mb-12">
-            Real solutions built for real businesses, with measurable outcomes.
+          <p className="dark:text-white/45 text-navy-900/50 text-base max-w-lg leading-relaxed mb-4">
+            We believe our work speaks for itself.
+          </p>
+          <p className="dark:text-white/45 text-navy-900/50 text-base max-w-lg leading-relaxed mb-4">
+            Below is a curated selection of sample projects that reflect our
+            expertise, quality standards, and experience across various
+            industries and global markets.
+          </p>
+          <p className="dark:text-white/45 text-navy-900/50 text-base max-w-lg leading-relaxed">
+            Due to client confidentiality and privacy agreements, some of our
+            completed projects cannot be publicly displayed. However, we would
+            be happy to share additional case studies and selected works upon
+            request.
           </p>
         </RevealBlock>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">

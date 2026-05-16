@@ -107,7 +107,7 @@ function Hero() {
             className="font-syne font-extrabold tracking-tight leading-[1.05] dark:text-white text-navy-900 mb-6"
             style={{ fontSize: "clamp(2.8rem, 7vw, 5.5rem)" }}
           >
-            <span className="grad-text">Synchronizing </span>
+            <span className="grad-text break-all">Synchronizing</span>
             <br />
             <span className="grad-text">Innovation</span>
             <br />
@@ -135,7 +135,7 @@ function Hero() {
           </motion.div>
 
           {/* Stats */}
-          <motion.div
+          {/* <motion.div
             variants={item}
             className="flex flex-wrap gap-10 justify-center"
           >
@@ -158,7 +158,7 @@ function Hero() {
                 </div>
               </motion.div>
             ))}
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </motion.div>
 

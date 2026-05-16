@@ -34,17 +34,17 @@ export const SERVICES: Service[] = [
     desc: "Eliminate repetitive tasks by automating workflows—saving time and reducing operational costs.",
   },
   {
-    icon: "⚙️",
+    icon: "🛠️",
     title: "Branding & Digital Solutions",
     desc: "Eliminate repetitive tasks by automating workflows—saving time and reducing operational costs.",
   },
   {
-    icon: "⚙️",
+    icon: "🌐",
     title: "IT Consultation",
     desc: "Eliminate repetitive tasks by automating workflows—saving time and reducing operational costs.",
   },
   {
-    icon: "⚙️",
+    icon: "🛠️",
     title: "Custom Business Solutions",
     desc: "Eliminate repetitive tasks by automating workflows—saving time and reducing operational costs.",
   },
@@ -85,36 +85,71 @@ export const PROCESS_STEPS: ProcessStep[] = [
 
 export const PROJECTS: Project[] = [
   {
-    tag: "Retail",
-    title: "Inventory Management System",
-    client: "Retail Business",
+    tag: "Workouts",
+    title: "Fitness Gym Mobile Application",
+    client: "Local Gym Facility",
     problem: "Manual tracking caused errors and delays",
-    solution: "Automated real-time inventory tracking",
-    result: "Reduced stock errors by 40% and improved operational efficiency",
+    solution: "Provide comprehensive gym tutorials workouts",
+    result: "Reduced errors by 40% and improved workout tracking efficiency",
+  },
+  {
+    tag: "Finances",
+    title: "Cashly",
+    client: "US Based",
+    problem: "Manual financial tracking led to errors and inefficiencies",
+    solution: "Automated financial tracking system with real-time insights",
+    result:
+      "Reduced errors by 40% and improved financial management efficiency",
+  },
+  {
+    tag: "Automation",
+    title: "Midnight Panel",
+    client: "US Based",
+    problem:
+      "Manual scheduling and notifications led to missed appointments and inefficiencies",
+    solution: "Automated scheduling and notification system",
+    result:
+      "Reduced missed appointments by 30% and improved scheduling efficiency",
+  },
+  {
+    tag: "Cafe",
+    title: "Beans N' Steams Cafe",
+    client: "Local Business",
+    problem: "Manual inventory management caused stockouts and overstocking",
+    solution: "Automated inventory management system with real-time tracking",
+    result:
+      "Reduced stockouts by 25% and improved inventory management efficiency",
   },
   {
     tag: "Education",
-    title: "Student Information System",
-    client: "Educational Institution",
-    problem: "Disorganized records and manual processes",
-    solution: "Centralized student data management system",
-    result: "Streamlined admin tasks and improved data accessibility",
+    title: "Dayawism",
+    client: "Local School",
+    problem:
+      " Manual student performance tracking led to delayed interventions and inefficiencies",
+    solution:
+      "Automated student performance tracking system with real-time insights",
+    result:
+      "Reduced delayed interventions by 35% and improved student performance tracking efficiency",
   },
   {
-    tag: "Service",
-    title: "Appointment Booking App",
-    client: "Service-Based Business",
-    problem: "Inefficient booking and missed appointments",
-    solution: "Mobile app with scheduling and notifications",
-    result: "Increased booking efficiency and reduced no-shows",
+    tag: "Trading",
+    title: "Viscount",
+    client: "EU Based",
+    problem: "Trading data analysis was time-consuming and error-prone",
+    solution: "Automated trading data analysis system with real-time insights",
+    result:
+      "Reduced analysis time by 50% and improved trading decision-making efficiency",
   },
   {
-    tag: "Analytics",
-    title: "Business Analytics Dashboard",
-    client: "Startup Company",
-    problem: "Lack of data insights for decision-making",
-    solution: "Real-time data visualization dashboard",
-    result: "Enabled smarter and faster business decisions",
+    tag: "E-Commerce",
+    title: "Esimstar",
+    client: "EU Based",
+    problem:
+      "Manual order processing and inventory management led to errors and delays",
+    solution:
+      "Automated order processing and inventory management system with real-time tracking",
+    result:
+      "Reduced order processing errors by 30% and improved inventory management efficiency",
   },
 ];
 
