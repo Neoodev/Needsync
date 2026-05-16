@@ -9,7 +9,7 @@ function WhyUs() {
     <section id="why" className="dark:bg-navy-900 bg-white">
       <div className="max-w-6xl mx-auto px-5 py-24">
         <RevealBlock>
-          <SectionTag>Why NeedSynq</SectionTag>
+          <SectionTag>Why Choose NeedSynqc?</SectionTag>
         </RevealBlock>
         <RevealBlock delay={0.1}>
           <SectionTitle>

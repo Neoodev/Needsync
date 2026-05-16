@@ -49,7 +49,7 @@ function Contact() {
             24 hours.
           </p>
         </RevealBlock>
-        <div className="grid md:grid-cols-2 gap-12 items-start">
+        <div className="grid md:grid-cols-1 gap-12 items-start">
           {/* Info */}
           <RevealBlock delay={0.1}>
             <div className="space-y-4">
@@ -82,7 +82,7 @@ function Contact() {
           </RevealBlock>
 
           {/* Form */}
-          <RevealBlock delay={0.2}>
+          {/* <RevealBlock delay={0.2}>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-2 gap-4">
                 <div>
@@ -175,7 +175,7 @@ function Contact() {
                 {sent ? "✓ Message Sent!" : "Send Message →"}
               </motion.button>
             </form>
-          </RevealBlock>
+          </RevealBlock> */}
         </div>
       </div>
     </section>

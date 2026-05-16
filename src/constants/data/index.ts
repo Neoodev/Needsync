@@ -20,7 +20,7 @@ export const SERVICES: Service[] = [
   },
   {
     icon: "📱",
-    title: "Mobile App Development",
+    title: "Mobile Application Development",
     desc: "Intuitive, high-performing mobile applications that keep your business connected anytime, anywhere.",
   },
   {
@@ -30,7 +30,22 @@ export const SERVICES: Service[] = [
   },
   {
     icon: "⚙️",
-    title: "Business Process Automation",
+    title: "Software Maintenance",
+    desc: "Eliminate repetitive tasks by automating workflows—saving time and reducing operational costs.",
+  },
+  {
+    icon: "⚙️",
+    title: "Branding & Digital Solutions",
+    desc: "Eliminate repetitive tasks by automating workflows—saving time and reducing operational costs.",
+  },
+  {
+    icon: "⚙️",
+    title: "IT Consultation",
+    desc: "Eliminate repetitive tasks by automating workflows—saving time and reducing operational costs.",
+  },
+  {
+    icon: "⚙️",
+    title: "Custom Business Solutions",
     desc: "Eliminate repetitive tasks by automating workflows—saving time and reducing operational costs.",
   },
 ];
@@ -38,28 +53,28 @@ export const SERVICES: Service[] = [
 export const PROCESS_STEPS: ProcessStep[] = [
   {
     num: "01",
-    title: "Discovery",
-    desc: "We understand your business, goals, and challenges to identify the best solution.",
+    title: "Research",
+    desc: "This phase focuses on identifying client needs, market trends, and project objectives. The team gathers insights and explores innovative ideas to build a strong project foundation.",
   },
   {
     num: "02",
     title: "Planning",
-    desc: "We define project scope, features, and timeline for a clear development path.",
+    desc: "The project structure, system architecture, features, timelines, and strategies are carefully planned to ensure organized development and execution.",
   },
   {
     num: "03",
-    title: "Design",
-    desc: "We create user-focused prototypes to visualize the final product.",
+    title: "Tasking",
+    desc: "Responsibilities are assigned to team members based on expertise to ensure an efficient and productive workflow.",
   },
   {
     num: "04",
-    title: "Development",
-    desc: "Our team builds your system using modern technologies and best practices.",
+    title: "Production",
+    desc: "The development phase begins where ideas are transformed into actual systems, applications, designs, and functional outputs.",
   },
   {
     num: "05",
-    title: "Testing",
-    desc: "We thoroughly test to ensure performance, security, and reliability.",
+    title: "Review",
+    desc: "The final output undergoes testing, evaluation, and feedback collection to ensure quality assurance before deployment or delivery.",
   },
   {
     num: "06",
@@ -171,11 +186,11 @@ export const FAQS: FaqItem[] = [
 ];
 
 export const WHY_ITEMS: string[] = [
-  "Tailored solutions designed specifically for your business",
-  "Modern and scalable technology stack",
-  "Fast and reliable development process",
-  "Startup-friendly and flexible approach",
-  "Ongoing support and maintenance post-launch",
+  "Client-centered solutions",
+  "Modern and scalable technologies",
+  "Creative and innovative approach",
+  "Efficient project workflow",
+  "Strong focus on quality assurance",
 ];
 
 export const NAV_LINKS = [
