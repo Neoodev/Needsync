@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { RevealBlock } from "./RevealBlock";
 import { SectionTag, SectionTitle } from "./SectionHeading";
 import { TeamCardProps } from "@/types";
+import React from "react";
 
 // ─── ABOUT ────────────────────────────────────────────────────────────────────
 function TeamCard({ initials, name, role, desc, index }: TeamCardProps) {
@@ -64,53 +65,119 @@ function About() {
         <RevealBlock>
           <SectionTag>About Us</SectionTag>
         </RevealBlock>
-        <div className="grid md:grid-cols-2 gap-16 items-start">
+        <div className="grid md:grid-cols-1 gap-16 items-center">
           <div>
             <RevealBlock delay={0.1}>
               <SectionTitle>
-                Technology That <span className="grad-text">Works for You</span>
+                Technology That <span className="grad-text">Synqs for You</span>
               </SectionTitle>
-              <p className="dark:text-white/50 text-navy-900/55 text-sm leading-relaxed mb-4">
-                NeedSynq is a technology solutions company focused on helping
-                businesses transform their ideas into efficient digital systems.
-                We specialize in custom software aligned perfectly with our
-                clients' needs.
+              <p className="dark:text-white/50 text-navy-900/55 text-sm leading-relaxed mb-4 text-center">
+                NeedSynq is a modern technology solutions company focused on
+                delivering digital services tailored to client needs. The
+                company specializes in creating efficient, innovative, and
+                user-centered solutions for businesses, organizations, and
+                individuals.
               </p>
-              <p className="dark:text-white/50 text-navy-900/55 text-sm leading-relaxed mb-6">
-                We're a startup-friendly team with a passion for clean code,
-                thoughtful design, and measurable outcomes.
+              <p className="dark:text-white/50 text-navy-900/55 text-sm leading-relaxed mb-6 text-center">
+                The name NeedSynq represents the synchronization of client needs
+                with smart technology solutions — ensuring every project is
+                aligned with quality, functionality, and innovation.
               </p>
             </RevealBlock>
             <RevealBlock delay={0.2}>
-              <div className="space-y-3">
+              <div className="grid md:grid-cols-2 gap-4 ">
                 {[
-                  {
-                    label: "Our Mission",
-                    color: "border-blue-DEFAULT",
-                    text: "To empower businesses through innovative and reliable technology solutions.",
-                  },
                   {
                     label: "Our Vision",
                     color: "border-purple-DEFAULT",
-                    text: "To become a trusted partner for businesses seeking digital transformation.",
+                    text: "To empower businesses through innovative and reliable technology solutions.",
+                  },
+                  {
+                    label: "Our Mission",
+                    color: "border-blue-DEFAULT",
+                    text: "",
+                  },
+                  {
+                    label: "Our Core Values",
+                    color: "border-blue-DEFAULT",
+                    text: "",
                   },
                 ].map((mv) => (
                   <div
                     key={mv.label}
                     className={`dark:bg-navy-card bg-gray-50 border dark:border-white/5 border-navy-900/5 border-l-2 ${mv.color} rounded-xl px-5 py-4`}
                   >
-                    <div className="text-xs font-bold uppercase tracking-widest text-blue-light mb-1">
+                    <div className="text-xs font-bold uppercase tracking-widest text-blue-light">
                       {mv.label}
                     </div>
-                    <p className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
-                      {mv.text}
-                    </p>
+                    {mv.label === "Our Mission" ? (
+                      <React.Fragment>
+                        <li className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
+                          To provide high-quality and client-focused technology
+                          services.
+                        </li>
+                        <li className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
+                          To transform ideas into functional and impactful
+                          digital solutions.
+                        </li>
+                        <li className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
+                          To build long-term partnerships through innovation,
+                          trust, and efficiency.
+                        </li>
+                        <li className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
+                          To continuously adapt to modern technologies and
+                          industry trends.
+                        </li>
+                      </React.Fragment>
+                    ) : mv.label === "Our Core Values" ? (
+                      <React.Fragment>
+                        <b className="text-md dark:text-white/55 text-navy-900/60 leading-relaxed">
+                          Innovation
+                        </b>
+                        <li className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
+                          Creating modern and effective solutions for evolving
+                          needs.
+                        </li>
+                        <b className="text-md dark:text-white/55 text-navy-900/60 leading-relaxed">
+                          Reliability
+                        </b>
+                        <li className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
+                          Delivering dependable services with consistent
+                          quality.
+                        </li>
+                        <b className="text-md dark:text-white/55 text-navy-900/60 leading-relaxed">
+                          Collaboration
+                        </b>
+                        <li className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
+                          Working closely with clients and team members for
+                          successful outcomes.
+                        </li>
+                        <b className="text-md dark:text-white/55 text-navy-900/60 leading-relaxed">
+                          Efficiency
+                        </b>
+                        <li className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
+                          Optimizing workflows and systems for better
+                          productivity.
+                        </li>
+                        <b className="text-md dark:text-white/55 text-navy-900/60 leading-relaxed">
+                          Integrity
+                        </b>
+                        <li className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
+                          Maintaining professionalism, honesty, and
+                          accountability.
+                        </li>
+                      </React.Fragment>
+                    ) : (
+                      <p className="text-sm dark:text-white/55 text-navy-900/60 leading-relaxed">
+                        {mv.text}
+                      </p>
+                    )}
                   </div>
                 ))}
               </div>
             </RevealBlock>
           </div>
-          <div>
+          {/* <div>
             <RevealBlock delay={0.15}>
               <p className="text-xs font-bold uppercase tracking-widest dark:text-white/30 text-navy-900/35 mb-4">
                 Our Team
@@ -121,7 +188,7 @@ function About() {
                 <TeamCard key={i} {...t} index={i} />
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

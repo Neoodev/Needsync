@@ -28,7 +28,7 @@ function Process() {
                 whileHover={{ y: -5, transition: { duration: 0.2 } }}
               >
                 <motion.div className="absolute top-0 left-0 right-0 h-0.5 grad-bg transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-400" />
-                <div className="font-syne font-extrabold text-4xl grad-text opacity-30 mb-3 leading-none">
+                <div className="font-syne font-extrabold text-4xl grad-text opacity-60 mb-3 leading-none">
                   {p.num}
                 </div>
                 <h3 className="font-syne font-bold dark:text-white text-navy-900 mb-2">
